@@ -41,6 +41,7 @@ experimental:
 proxies:
   - {name: vmess-Singapore, server: v2ray.ocwud.com, port: 39754, type: vmess, uuid: 76a2a0e3-db9c-450a-913d-7fc625b73781, sni:twitter.com , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: twitter.com}}}
   - {name: vmes-Australia, server: vps.ocwud.com, port: 42547, type: vmess, uuid: 51652cb6-a8be-4a95-e5b2-d69bb0846d52, sni:twitter.com , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: twitter.com}}}
+  - {name: vmess-India, server: lakshan-india.duckdns.org, port: 11060, type: vmess, uuid: ac0598c6-8b3e-44b0-b0ee-f973b51a4a08, sni:twitter.com , alterId: 0, cipher: auto, tls: 1, skip-cert-verify: true, udp: true, network: ws, ws-opts: {path: /, headers: {Host: twitter.com}}}
 
 proxy-groups:
   - name: sshkit-generator
@@ -48,6 +49,7 @@ proxy-groups:
     proxies:
       - vmess-Singapore
       - vmes-Australia
+      - vmess-India
 
 rules:
  - MATCH,sshkit-generator
